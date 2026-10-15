@@ -1,0 +1,14 @@
+[DEFAULT]
+# Время бана — 10 минут
+bantime = 10m
+# Окно, в течение которого считаются неудачные попытки
+findtime = 10m
+# Количество неудачных попыток до бана
+maxretry = 5
+
+[sshd]
+enabled = true
+port = ssh
+filter = sshd
+logpath = /var/log/auth.log
+maxretry = 5

@@ -1,0 +1,14 @@
+# Пример изменений, которые вносит scripts/02-ssh-hardening.sh в /etc/ssh/sshd_config
+# (показан смысловой diff, не предназначен для применения через `patch`)
+
+- #PasswordAuthentication yes
++ PasswordAuthentication no
+
+- #PermitRootLogin prohibit-password
++ PermitRootLogin no
+
+- #PubkeyAuthentication yes
++ PubkeyAuthentication yes
+
+- #ChallengeResponseAuthentication yes
++ ChallengeResponseAuthentication no
